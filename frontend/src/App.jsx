@@ -1,14 +1,10 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <>
-      <div>
-        <h1 className="text-3xl font-bold underline">Hello World!</h1>
-      </div>
-    </>
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+      <Navbar />
+    </div>
   );
 }
 
