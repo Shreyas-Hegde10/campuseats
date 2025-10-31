@@ -11,7 +11,7 @@ function ProgressBar({ totalItems }) {
   };
 
   return (
-    <div className="max-w-sm mx-auto mb-8">
+    <div className="max-w-sm mx-auto">
       <div className="flex justify-between items-center mb-4">
         <div>
           <h1 className="text-3xl font-bold text-gray-900">CampusEats</h1>

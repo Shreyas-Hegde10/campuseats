@@ -1,4 +1,4 @@
-export const mockMenuItems = [
+export default mockMenuItems = [
   {
     id: '1',
     name: 'Cheese Pizza Slice',
