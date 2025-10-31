@@ -2,12 +2,11 @@ import { Utensils, HelpCircle } from "lucide-react";
 
 function Navbar({ onShowModal }) {
   return (
-    <nav className="bg-white/80 backdrop-blur border-b border-gray-200 top-0 z-40 relative">
+    <nav className="bg-white/80 backdrop-blur border-b border-gray-200 top-0 z-40 relative mb-8">
       <div className="container mx-auto px-4">
         <div className="flex justify-center items-center py-4">
-          {/* Help button positioned absolutely */}
           <button
-            className="absolute right-4 p-2 hover:bg-gray-100 rounded-full transition-colors duration-200"
+            className="absolute right-4 p-2 hover:bg-gray-100 rounded-full transition-colors duration-200 cursor-pointer hover:shadow-xl transition-all duration-200 hover:scale-105"
             title="Show Instructions"
             onClick={onShowModal}
           >

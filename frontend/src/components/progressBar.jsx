@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {Settings, RotateCcw} from 'lucide-react'
 
 function ProgressBar({ totalItems }) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -17,11 +18,11 @@ function ProgressBar({ totalItems }) {
           <p className="text-gray-600">{currentIndex + 1} of {totalItems} items</p>
         </div>
         <div className="flex space-x-2">
-          <button className="p-3 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105">
-            Settings
+          <button className="p-3 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105 cursor-pointer">
+            <Settings className="w-5 h-5 text-blue-600" />
           </button>
-          <button className="p-3 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105" onClick={() => setCurrentIndex(0)}>
-            Reset
+          <button className="p-3 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105 cursor-pointer" onClick={() => setCurrentIndex(0)}>
+            <RotateCcw className="w-5 h-5 text-blue-600" />
           </button>
         </div>
       </div>
