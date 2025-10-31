@@ -1,6 +1,8 @@
 import Navbar from "./components/Navbar";
-import InstructionsModal from "./components/instructionsModal";
+import InstructionsModal from "./components/instructionsModal"; 
+import ProgressBar from "./components/progressBar";
 import { useState, useEffect } from "react";
+
 function App() {
   const [showModal, setShowModal] = useState(true);
   useEffect(() => {
@@ -14,6 +16,7 @@ function App() {
       {showModal ? (
         <InstructionsModal closeModal={() => setShowModal(false)} />
       ) : null}
+        <ProgressBar totalItems={10} />
     </div>
   );
 }
