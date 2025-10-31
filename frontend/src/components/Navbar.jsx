@@ -11,7 +11,7 @@ function Navbar({ onShowModal }) {
             title="Show Instructions"
             onClick={onShowModal}
           >
-            <HelpCircle className="w-5 h-5 text-gray-600" />
+            <HelpCircle className="w-5 h-5 text-blue-600"/>
           </button>
 
           <div className="flex items-center space-x-3">
